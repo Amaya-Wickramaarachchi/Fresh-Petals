@@ -46,7 +46,7 @@ header {
 /* Navigation Styling */
 nav {
     display: flex;
-    align-items: center; /* Center items vertically */
+    align-items: center;
 }
 
 nav ul {
@@ -57,7 +57,7 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: 30px; /* Adjust spacing between nav items */
+    margin-left: 30px; 
 }
 
 nav ul li a {
@@ -128,15 +128,6 @@ nav ul li a:hover::after {
     text-align: center;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
 .dot {
     cursor: pointer;
     height: 15px;
@@ -164,7 +155,7 @@ nav ul li a:hover::after {
 }
 
 main {
-    padding: 50px 15px; /* Reduced padding for top margin */
+    padding: 50px 15px; 
     background-color: #fff;
 }
 
@@ -192,10 +183,10 @@ footer {
     background-color: #E6A4B4;
     color: #333;
     text-align: center;
-    padding: 20px 0; /* Adjusted padding for better spacing */
+    padding: 20px 0; 
     width: 100%;
     bottom: 0;
-    position: relative; /* Ensure footer stays at the bottom of the page */
+    position: relative; 
 }
 
 footer p {
@@ -207,11 +198,11 @@ footer a {
     color: #333;
     text-decoration: none;
     font-weight: bold;
-    margin: 0 10px; /* Spacing between links */
+    margin: 0 10px; 
 }
 
 footer a:hover {
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: underline; 
 }
 
 form {
@@ -233,21 +224,21 @@ form input, form textarea {
 }
 
 form button {
-    background-color: #fff; /* Initial background color */
-    color: #6f0936; /* Text color */
-    border: 2px solid #6f0936; /* Initial border color */
-    padding: 10px 15px; /* Padding for the button */
-    cursor: pointer; /* Pointer cursor on hover */
-    font-size: 16px; /* Font size for better readability */
+    background-color: #fff;
+    color: #6f0936; 
+    border: 2px solid #6f0936; 
+    padding: 10px 15px; 
+    cursor: pointer; 
+    font-size: 16px; 
     transition: all 0.3s ease;
-    width: 500px;
+    width: auto;
     justify-content: center;
 }
 
 form button:hover {
-    background-color: #6f0936; /* Background color on hover */
-    color: #F6F5F2; /* Text color on hover */
-    border: 2px solid #6f0936; /* Border color on hover */
+    background-color: #6f0936; 
+    color: #F6F5F2;
+    border: 2px solid #6f0936;
 }
 
 text {
@@ -258,10 +249,10 @@ text {
 .slideshow2-container {
     
     float: left;
-    width: 100%; /* Adjust the width as needed */
-    margin-left: 0; /* Aligns the slideshow to the left */
-    margin-right: 20px; /* Optional: Adds space between the slideshow and the next element */
-    padding: 10px; /* Optional: Adds some padding around the slideshow */
+    width: 100%; 
+    margin-left: 0; 
+    margin-right: 20px; 
+    padding: 10px; 
 }
 
 /* Clear floats after the slideshow container */
@@ -401,8 +392,8 @@ text {
     }
 
     .logo {
-        display: inline-block; /* Ensure the logo is treated as a block element */
-        margin: 0 auto; /* Center the logo */
+        display: inline-block; 
+        margin: 0 auto; 
         margin-bottom: 10px;
     }
 
