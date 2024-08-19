@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fresh Petals - Your source for beautiful floral arrangements. Contact us for inquiries and orders.">
+    <meta name="keywords" content="Fresh Petals, flowers, floral arrangements, contact, order">
+    <title>Fresh Petals - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Freehand&family=Gruppo&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+
+    <style>
+        body{
+        background-image: url('images/contactbg.jpg'); 
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat;
+       }
+       
+       main {
+        max-width: 800px;
+        margin: auto;
+        margin-top: 100px;
+        margin-bottom: 30px;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.5); 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Fresh Petals</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="products.html">PRODUCTS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-form">
+            <center><h1>Contact Us</h1></center>
+            <form name="contactForm" onsubmit="return validateContactForm()">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        
+        <p>
+            <a href="index.html">Home</a> | 
+            <a href="about.html">About</a> | 
+            <a href="products.html">Products</a> | 
+            <a href="contact.html">Contact</a> | 
+            <a href="faq.html">FAQ</a>
+        </p>
+        <p>&copy; 2024 Fresh Petals</p>
+    </footer>
+</body>
+</html>

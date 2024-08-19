@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Petals - Products</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Freehand&family=Gruppo&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+</head>
+<style>
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.tablink {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #a00e58;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    transition: background-color 0.3s;
+    flex-grow: 1;
+}
+
+.tablink:hover {
+    background-color: #e6a4b4;
+}
+
+.tabcontent {
+    margin-top: 50px;
+    display: none;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.tabcontent .product-card {
+    display: inline-block;
+    margin: 10px;
+    background-color: #fff;
+    
+}
+
+.product-card img {
+    width: 300px;
+    height:350px;
+    border-radius: 0px;
+}
+
+.product-card h2 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.product-card p {
+    color: #333;
+    font-size: 16px;
+    width:300px;
+}
+
+</style>
+<body>
+    <header>
+        <a href="index.html" class="logo">Fresh Petals</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="products.html">PRODUCTS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="tabs">
+            <button class="tablink" onclick="openCategory(event, 'Roses')">Roses</button>
+            <button class="tablink" onclick="openCategory(event, 'Orchids')">Orchids</button>
+            <button class="tablink" onclick="openCategory(event, 'Tulips')">Tulips</button>
+            <button class="tablink" onclick="openCategory(event, 'MixedBouquets')">Mixed Bouquets</button>
+        </div>
+
+        <div id="Roses" class="tabcontent">
+            <div class="product-card">
+                <img src="images/rose1.jpg" alt="Long Stem Pink and Red Roses">
+                <h2>Long Stem Pink and Red Roses</h2>
+                   <p>A classic blend of elegance and passion with pink and red roses.</p> 
+                <p>$119.99</p>
+            </div>
+            <div class="product-card">
+                <img src="images/rose2.jpg" alt="Pink Splashed Roses">
+                <h2>Pink Splashed Roses</h2>
+                <p>Delicate roses with a splash of pink for a touch of charm.</p>
+                <p>$69.99</p>
+            </div>
+            <div class="product-card">
+                <img src="images/rose3.jpg" alt="Romantic Red Roses">
+                <h2>Romantic Red Roses</h2>
+                <p>A timeless bouquet of deep red roses for pure romance..</p>
+                <p>$79.99</p>
+            </div>
+            <div class="product-card">
+                <img src="images/rose4.jpg" alt="Preserved Red Rose">
+                <h2>Preserved Red Roses</h2>
+                <p>Eternal elegance with long-lasting preserved red roses.</p>
+                <p>$99.99</p>
+            </div>
+            <div class="product-card">
+                <img src="images/rose5.jpg" alt="Long Stem Lavender Roses">
+                <h2>Long Stem Lavender Roses</h2>
+                <p>Graceful lavender roses for a touch of serene beauty.</p>
+                <p>$89.99</p>
+            </div>
+            <div class="product-card">
+                <img src="images/rose6.jpg" alt="Long Stem Yellow Roses">
+                <h2>Long Stem Yellow Roses</h2>
+                <p>Brighten any day with the cheerful charm of long stem yellow roses.</p>
+                <p>$49.99</p>
+            </div>
+            
+        </div>
+
+        <div id="Orchids" class="tabcontent">
+            <div class="product-card">
+                <img src="images/orchid1.jpg" alt="Exotic Breeze Orchids">
+                <h2>Exotic Breeze Orchids</h2>
+                <p>Elegant orchids with a hint of the exotic, perfect for a breath of fresh style.</p>
+                <p>$29.99</p>
+            </div>
+            <div class="product-card">
+                <img src="images/orchid2.jpg" alt="Ocean Breeze Orchids">
+                <h2>Ocean Breeze Orchids</h2>
+                <p>Serene orchids with a refreshing, oceanic touch.</p>
+                <p>$55.99</p>
+            </div>
+            <div class="product-card">
+                <img src="images/orchid3.jpg" alt="Colourful Orchids Garden">
+                <h2>Colourful Orchids Garden</h2>
+                <p>A vibrant array of orchids, each showcasing its unique beauty in full, lush bloom.</p>
+                <p>$48.99</p>
+            </div>
+        </div>
+
+        <div id="Tulips" class="tabcontent">
+            <div class="product-card">
+                <img src="images/tulip1.jpg" alt="Spring Tulips Wheelbarrow">
+                <h2>Spring Tulips Wheelbarrow</h2>
+                <p>Charming wheelbarrow filled with vibrant spring tulips.</p>
+                <p>$24.99</p>
+            </div>
+            <div class="product-card">
+                <img src="images/tulip2.jpg" alt="Pastel Colour Tulips">
+                <h2>Pastel Colour Tulips</h2>
+                <p>Soft, pastel tulips in gentle hues for a serene floral touch.</p>
+                <p>$34.99</p>
+            </div>
+            <div class="product-card">
+                <img src="images/tulip3.jpg" alt="White Tulips">
+                <h2>White Tulips</h2>
+                <p>Elegant white tulips, symbolizing purity and grace.</p>
+                <p>$34.99</p>
+            </div>
+        </div>
+
+        <div id="MixedBouquets" class="tabcontent">
+            <div class="product-card">
+                <img src="images/mixed1.jpg" alt="Purple Elegance Mixed Bouquet">
+                <h2>Purple Elegance Mixed Bouquet</h2>
+                <p>A sophisticated blend of purple blooms, exuding grace and charm.</p>
+                <p>$29.99</p>
+            </div>
+            <div class="product-card">
+                <img src="images/mixed2.jpg" alt="Blue & White Mixed Half Casket Cover">
+                <h2>Blue & White Mixed Half Casket Cover</h2>
+                <p>A serene half casket cover featuring a tasteful blend of blue and white blooms.</p>
+                <p>$39.99</p>
+            </div>
+            <div class="product-card">
+                <img src="images/mixed3.jpg" alt="Sacred Blessings™ Blue & White">
+                <h2>Sacred Blessings™ Blue & White</h2>
+                <p>A tranquil arrangement of blue and white flowers, symbolizing peace and reverence.</p>
+                <p>$39.99</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        
+        <p>
+            <a href="index.html">Home</a> | 
+            <a href="about.html">About</a> | 
+            <a href="products.html">Products</a> | 
+            <a href="contact.html">Contact</a> | 
+            <a href="faq.html">FAQ</a>
+        </p>
+        <p>&copy; 2024 Fresh Petals</p>
+    </footer>
+
+    <script>function openCategory(evt, categoryName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+        }
+        document.getElementById(categoryName).style.display = "block";
+        evt.currentTarget.style.backgroundColor = "#E6A4B4";
+    }
+    
+    // Open the first tab by default
+    document.getElementsByClassName("tablink")[0].click();
+    </script>
+</body>
+</html>
