@@ -8,6 +8,10 @@ The **Contact Us** page includes a user-friendly form to facilitate customer inq
 
 Fresh Petals is the go-to destination for anyone seeking beautiful, high-quality floral arrangements with a touch of elegance and ease of use.
 
+## Website
+
+Visit the live website: [Fresh Petals](https://amaya-wickramaarachchi.github.io/Fresh-Petals/)
+
 ## Features
 - **Homepage:** Engaging slideshows featuring floral arrangements.
 - **About Us:** Brand values and commitment to quality.
