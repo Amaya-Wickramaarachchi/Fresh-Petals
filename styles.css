@@ -532,17 +532,16 @@ text {
     }
     
 footer{
-    header {
         width:100%;
         text-align: center;
         flex-direction: column;
         align-items: flex-start;
         padding: 10px;
         background-color: rgba(230, 164, 180, 0.9);
-    }
+    
 
 }
-}
+
 
 
 
