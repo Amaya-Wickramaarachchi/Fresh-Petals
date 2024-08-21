@@ -6,6 +6,8 @@
         <title>Fresh Petals - About Us</title>
         <link rel="stylesheet" href="styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Freehand&family=Gruppo&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     </head>
     <header>
         <a href="index.html" class="logo">Fresh Petals</a>
@@ -14,12 +16,13 @@
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="products.html">PRODUCTS</a></li>
+                <li><a href="product-request.html">ORDER NOW</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
                 <li><a href="faq.html">FAQ</a></li>
-            </ul>
+                <li><a href="register.html"><i class="fas fa-seedling"></i>REGISTER</a></li>
+                </ul>
         </nav>
     </header>
-
     <main>
         <div class="intro-section">
             <div class="intro-text">
@@ -83,7 +86,55 @@
                 </div>
             </section>
         </div>
-        
+        <!-- Reviews Section -->
+<h1 class="section-title">Customer Reviews</h1>
+<div class="reviews">
+    <div class="review">
+        <div class="stars">
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star">&#9733;</span>
+        </div>
+        <p>"Fresh Petals provided the most beautiful bouquet for my wedding! The flowers were fresh and the arrangement was stunning. Highly recommend!"</p>
+        <span>- Sarah M.</span>
+    </div>
+    <div class="review">
+        <div class="stars">
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+        </div>
+        <p>"I ordered flowers for my mom's birthday, and she loved them! The delivery was prompt, and the flowers looked even better than the pictures."</p>
+        <span>- John D.</span>
+    </div>
+    <div class="review">
+        <div class="stars">
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+        </div>
+        <p>"Exceptional service and gorgeous flowers! Fresh Petals is my go-to for all my floral needs. The team is friendly and always exceeds my expectations."</p>
+        <span>- Emily R.</span>
+    </div>
+    <div class="review">
+        <div class="stars">
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star filled">&#9733;</span>
+            <span class="star">&#9733;</span>
+        </div>
+        <p>"I was impressed by the creativity of their arrangements. The flowers were fresh, and the bouquet lasted for over a week. Worth every penny!"</p>
+        <span>- David K.</span>
+    </div>
+</div>
+
         
     </main>
 
@@ -101,4 +152,30 @@
     <script src="slideshow1.js"></script>
 
 </body>
+<script>// Function to check if an element is in the viewport
+    function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+    
+    function handleScroll() {
+        const features = document.querySelectorAll('.feature');
+        features.forEach(feature => {
+            if (isElementInViewport(feature)) {
+                feature.classList.add('show');
+            }
+        });
+    }
+    
+    // Listen for scroll events and trigger the animation
+    window.addEventListener('scroll', handleScroll);
+    
+    // Trigger the animation on page load in case elements are already in view
+    window.addEventListener('load', handleScroll);
+    </script>
 </html>
