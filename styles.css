@@ -510,14 +510,16 @@ text {
     }
 
     .feature {
+    
         width: 60%; 
         height: 400px; 
         margin-bottom: 20px; 
         border-radius: 50px;
-        opacity: 0; /* Start with features hidden */
-        transform: translateX(-100px); /* Start off-screen to the left */
-        transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth transition */
+        opacity: 0; 
+        transform: translateX(-100px);
+        transition: opacity 0.1s ease-out, transform 0.2s ease-out;
 
+    
     }
 
     .feature img {
