@@ -515,11 +515,6 @@ text {
         height: 400px; 
         margin-bottom: 20px; 
         border-radius: 50px;
-        opacity: 0; 
-        transform: translateX(-100px);
-        transition: opacity 0.1s ease-out, transform 0.2s ease-out;
-
-    
     }
 
     .feature img {
@@ -535,11 +530,7 @@ text {
     .feature h1{
         font-size: 50px;
     }
-    .feature.show {
-        opacity: 1; /* Make the feature visible */
-        transform: translateX(0);
-
-}
+    
 footer{
     header {
         width:100%;
