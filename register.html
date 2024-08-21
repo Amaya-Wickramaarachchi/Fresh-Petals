@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Freehand&family=Gruppo&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+     body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('images/faqbg.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat;
+        }
+    
+    .registration-container {
+        background: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+        margin-top: 100px;
+        background-color: rgba(255, 255, 255, 0.5); 
+    }
+    
+    h1 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+    }
+    
+    form label {
+        font-weight: bold;
+        margin-bottom: 5px;
+        display: block;
+    }
+    
+    form input {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+    
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #6f0936;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    
+    button:hover {
+        background-color: #5c0730;
+    }
+    @media (max-width:768px) {
+            body{
+            font-family: 'Playfair Display', serif;
+            margin-top: 200px;
+            padding: 0;
+            font-size:medium;
+            line-height: 1.3;
+            text-align: left;
+            }
+            
+        }
+</style>    
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">Fresh Petals</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="products.html">PRODUCTS</a></li>
+                <li><a href="product-request.html">ORDER NOW</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="register.html"><i class="fas fa-seedling"></i>REGISTER</a></li>
+                </ul>
+        </nav>
+    </header>
+    <div class="registration-container">
+        <h1>Register with Fresh Petals</h1>
+            <p>Register with Fresh Petals to get the latest flower updates, exclusive offers, and more!</p>
+        <form id="registrationForm" onsubmit="return validateRegistrationForm()">
+            <label for="regName">Name:</label>
+            <input type="text" id="regName" name="name" required>
+
+            <label for="regEmail">Email:</label>
+            <input type="email" id="regEmail" name="email" required>
+
+            <label for="nic">NIC:</label>
+            <input type="text" id="nic" name="nic" required>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    <footer>
+        <p>
+            <a href="index.html">Home</a> | 
+            <a href="about.html">About</a> | 
+            <a href="products.html">Products</a> | 
+            <a href="contact.html">Contact</a> | 
+            <a href="faq.html">FAQ</a>
+        </p>
+        <p>&copy; 2024 Fresh Petals. All rights reserved.</p>
+    </footer>
+    <script>
+        function validateRegistrationForm() {
+    const name = document.getElementById('regName').value.trim();
+    const email = document.getElementById('regEmail').value.trim();
+    const nic = document.getElementById('nic').value.trim();
+
+    // Empty Value Validation
+    if (name === "" || email === "" || nic === "") {
+        alert("All fields are required.");
+        return false;
+    }
+
+    // Email Validation
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (!emailPattern.test(email)) {
+        alert("Please enter a valid email address.");
+        return false;
+    }
+
+    // NIC Validation 
+    const nicPattern = /^[0-9]{9}[vVxX]$/;
+    if (!nicPattern.test(nic)) {
+        alert("Please enter a valid NIC.");
+        return false;
+    }
+
+    alert("Registration successful!");
+    return true;
+}
+
+    </script>
+    
+
+    
+</body>
+</html>
