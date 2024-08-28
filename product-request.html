@@ -18,10 +18,10 @@
             background-size: cover; 
             background-position: center; 
             background-repeat: no-repeat;
-            margin-top: 100PX;
+            margin-top: 100px;
         }
         
-      .request-container {
+        .request-container {
             background: white;
             padding: 30px;
             border-radius: 8px;
@@ -65,23 +65,20 @@
         }
 
         .request-container button:hover {
-        background-color: #6f0936;
-        color: #F6F5F2; 
-        border: 2px solid #6f0936; 
+            background-color: #6f0936;
+            color: #F6F5F2; 
+            border: 2px solid #6f0936; 
         }
-
-    
 
         @media (max-width:768px) {
             body{
-            font-family: 'Playfair Display', serif;
-            margin-top: 300px;
-            padding: 0;
-            font-size:medium;
-            line-height: 1.3;
-            text-align: left;
+                font-family: 'Playfair Display', serif;
+                margin-top: 300px;
+                padding: 0;
+                font-size: medium;
+                line-height: 1.3;
+                text-align: left;
             }
-            
         }
     </style>
 </head>
@@ -98,7 +95,7 @@
                 <li><a href="contact.html">CONTACT</a></li>
                 <li><a href="faq.html">FAQ</a></li>
                 <li><a href="register.html"><i class="fas fa-seedling"></i>REGISTER</a></li>
-                </ul>
+            </ul>
         </nav>
     </header>
 
@@ -154,6 +151,13 @@
             const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
             if (!emailPattern.test(email)) {
                 alert("Please enter a valid email address.");
+                return false;
+            }
+
+            // Phone Number Validation
+            const phonePattern = /^\+?[0-9]{7,15}$/; // Allows optional "+" and 7 to 15 digits
+            if (!phonePattern.test(phone)) {
+                alert("Please enter a valid phone number.");
                 return false;
             }
 
